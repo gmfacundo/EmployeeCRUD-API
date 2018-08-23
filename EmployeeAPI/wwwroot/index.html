@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head meta charset="UTF-8">
+    <title>Employee System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+          crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Roboto';
+        }
+    </style>
+
+</head>
+
+<body class="p-3 mb-2 bg-light text-black">
+
+    <h1 class="d-flex justify-content-center">Employee System</h1>
+    <br>
+
+    <h4>Add</h4>
+
+    <form action="javascript:void(0);" method="POST" onsubmit="addItem()" class="form-group">
+        <input type="text" id="add-name" placeholder="Name">
+        <input type="text" id="add-lastn" placeholder="Last Name">
+        <input type="text" id="add-age" placeholder="Age">
+        <input type="date" id="add-entryDate" placeholder="Entry Date">
+        <input type="text" id="add-area" placeholder="Area">
+        <input type="text" id="add-role" placeholder="Role">
+        <input type="submit" value="Add" class="btn btn-primary">
+    </form>
+
+    <br>
+
+    <div id="spoiler" style="display:none">
+        <h4>Edit</h4>
+        <form class="my-form">
+            <input type="hidden" id="edit-id">
+            <input type="text" id="edit-name" placeholder="Name">
+            <input type="text" id="edit-lastn" placeholder="Last Name">
+            <input type="text" id="edit-age" placeholder="Age">
+            <input type="date" id="edit-entryDate" placeholder="Entry Date">
+            <input type="text" id="edit-area" placeholder="Area">
+            <input type="text" id="edit-role" placeholder="Role">
+            <input type="submit" value="Edit" class="btn btn-primary">
+            <a onclick="closeInput()" aria-label="Close">&#10006;</a>
+        </form>
+    </div>
+
+    <br>
+
+    <p id="counter"></p>
+
+    <table class="EmployeeTable table table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th>Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+                <th>Entry Date</th>
+                <th>Area</th>
+                <th>Role</th>
+                <th class="NoTable"></th>
+                <th class="NoTable"></th>
+            </tr>
+        </thead>
+        <tbody id="employee"></tbody>
+    </table>
+
+    <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="site.js"></script>
+
+</body>
+
+</html>
