@@ -21,7 +21,7 @@ You can get the softwares needed form its official website:
 - On Toolbox version, after opening Quickstart Terminal you might get the following error “This computer doesn’t have VT-X/AMD-v enabled. Enabling in BIOS is mandatory”.
 
 ## Step by step development.
-You can follow this [link]() to know how to develop this API.
+You can follow this [link](https://medium.com/@gmf.facundo/asp-net-core-and-docker-working-together-42723eb7f3f) to know how to develop this API.
 
 ## Documentation
 You can read [documentation for ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-2.1), including Docker usage in the [Docker docs](https://docs.docker.com/) and a introduction to [Postman](https://www.getpostman.com/docs/v6/).
